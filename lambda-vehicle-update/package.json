@@ -1,0 +1,23 @@
+{
+  "name": "lmb-sa-east-1-deepwater-nps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tristão (João Alexandre Tristão de Almeida)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.186.0",
+    "config": "^1.26.2",
+    "dateformat": "^3.0.2",
+    "fs": "0.0.1-security",
+    "s3fs": "^2.5.0",
+    "shortid": "^2.2.8",
+    "util": "^0.10.3",
+    "uuid": "^3.2.1",
+    "winston": "^2.4.0",
+    "winston-aws-cloudwatch": "^1.6.0"
+  }
+}

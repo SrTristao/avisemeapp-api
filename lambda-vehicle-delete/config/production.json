@@ -1,0 +1,23 @@
+{
+    "proxy": {
+        "enabled": false,
+        "protocol": "",
+        "host": "",
+        "port": 0,
+        "user": "",
+        "password": ""
+    },
+    "log":{
+        "enabled":true,
+        "winston":{
+            "enabled": false
+        }
+    },
+    "aws":{
+        "config":{
+            "accessKeyId": "AKIAIBPGXN5DEWUKZWNA",
+            "secretAccessKey": "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",
+            "region": "sa-east-1"
+        }
+    }
+}
