@@ -1,16 +1,1 @@
-/lambda-user-register/node_modules/
-/lambda-user-register/lambda-user-register.zip
-/lambda-user-update/node_modules/
-/lambda-user-update/lambda-user-update.zip
-/lambda-user-score-getAll/node_modules/
-/lambda-user-score-getAll/lambda-user-score-getAll.zip
-/lambda-score-register/node_modules/
-/lambda-score-register/lambda-score-register.zip
-/lambda-vehicle-delete/node_modules/
-/lambda-vehicle-delete/lambda-vehicle-delete.zip
-/lambda-vehicle-getAll/node_modules/
-/lambda-vehicle-getAll/lambda-vehicle-getAll.zip
-/lambda-vehicle-register/node_modules/
-/lambda-vehicle-register/lambda-vehicle-register.zip
-/lambda-vehicle-update/node_modules/
-/lambda-vehicle-update/lambda-vehicle-update.zip
+/node_modules/
