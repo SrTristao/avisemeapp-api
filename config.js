@@ -1,4 +1,4 @@
-const port = 5000;
+const port = process.env.PORT || 5000;
 const DBHOST = '@ds129670.mlab.com:29670/avisemecar';
 const DBUSER = 'admin';
 const DBPASSWORD = 'admin123'

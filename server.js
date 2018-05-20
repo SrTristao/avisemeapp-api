@@ -12,6 +12,5 @@ app.use(cors());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use('/',routes);
-const port = 5000;
 const server = http.createServer(app);
-server.listen(port, () => console.log("server is listening on port:", server.address().port));
+server.listen(config.port, () => console.log("server is listening on port:", server.address().port));
