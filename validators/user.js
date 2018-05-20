@@ -8,7 +8,9 @@ const schema = joi.object().keys({
     postalCode: joi.string().required(),
     city: joi.string().required(),
     state: joi.string().required(),
-    password: joi.string().required()
+    password: joi.string().required(),
+    dateofbirth: joi.string().required(),
+    
 });
 
 const validate = async (model) => {

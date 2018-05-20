@@ -10,7 +10,8 @@ const userSchema = new mongoose.Schema({
     city: {type: String, required: true},
     state: {type: String, required: true},
     password: {type: String, required: true},
-    createdAt: Date
+    createdAt: Date,
+    dateofbirth: {type: String, require: true}
 });
 
 module.exports = mongoose.model('User', userSchema);
