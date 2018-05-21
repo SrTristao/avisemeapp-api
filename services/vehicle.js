@@ -33,9 +33,18 @@ const deleteVehicle = async(id) => {
     return await Vehicle.deleteVehicle(id);
 }
 
+const get = async (board, user_id) => {
+    const vehicleFound = await Vehicle.findByBoard(board);
+    
+    if (!vehicleFound) throw new error.ServiceError('vehicle-not-found');
+  
+    return vehicleFound.id_user === user_id;
+}
+
 module.exports = {
     register,
     update,
     getAll,
-    deleteVehicle
+    deleteVehicle,
+    get
 }

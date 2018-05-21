@@ -7,7 +7,9 @@ const schema = joi.object().keys({
     brand: joi.string().required(),
     year: joi.string().required(),
     model: joi.string().required(),
-    id_user: joi.string().required()
+    id_user: joi.string().required(),
+    color: joi.string().required(),
+    state: joi.string().required()
 });
 
 const validate = async (model) => {
