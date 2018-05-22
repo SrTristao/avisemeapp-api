@@ -5,13 +5,11 @@ const error = require('./error'),
     validator = require('../validators/notification')
 
 const register = async (notification) => {
-    const vehicle = await Vehicle.findByBoard(vehicle.board);
+    const vehicle = await Vehicle.findByBoard(notification.board);
 
-    if(vehicle) throw new error.ServiceError('vehicle-already-created');
+    if(!vehicle) throw new error.ServiceError('vehicle-not-found');
 
     notification.user_receive = vehicle.id_user;
-
-    await validator(notification);
 
     return await Notification.registerNotification(notification);
 }
