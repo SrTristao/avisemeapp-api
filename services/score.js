@@ -17,7 +17,12 @@ const getAll = async (id_user) => {
     return await Score.findAll(id_user);
 }
 
+const getByNotification = async (id_notification) => {
+    return await Score.findByNotification(id_notification);
+}
+
 module.exports = {
     register,
-    getAll
+    getAll,
+    getByNotification
 }
