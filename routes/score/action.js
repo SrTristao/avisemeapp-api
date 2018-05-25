@@ -28,8 +28,11 @@ const getAll = async (req, res, next) => {
 const getByNotification = async (req, res, next) => {
     try {
         const result = await scoreService.getByNotification(req.params.id_notification);
+        console.log(result);
         if (!result)
             res.status(401).send({message: 'Ocorreu um erro ao tentar buscar a pontuação.'});
+        
+            
         
         res.status(200).send({result, message: 'Pontuação recuperada com sucesso.'});
     } catch(err) {

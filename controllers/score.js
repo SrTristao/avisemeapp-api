@@ -1,6 +1,7 @@
 const Score = require('../models/score');
 
 const findByNotification = async (id_notification) => {
+    console.log(id_notification)
     return await Score.findOne({id_notification});
 }
 

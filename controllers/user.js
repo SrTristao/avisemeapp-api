@@ -21,7 +21,16 @@ const deleteUser = async (id) => {
 }
 
 const updateUser = async (userUpdate) => {
-    return await User.findByIdAndUpdate({_id: userUpdate._id}, userUpdate);
+    return await User.findByIdAndUpdate({_id: userUpdate._id}, {
+        name: userUpdate.name,
+        dateofbirth: userUpdate.dateofbirth,
+        address: userUpdate.address,
+        postalCode: userUpdate.postalCode,
+        complement: userUpdate.complement,
+        neighborhood: userUpdate.neighborhood,
+        city: userUpdate.city,
+        state: userUpdate.state
+    });
 }
 
 const changePassword = async (user) => {
