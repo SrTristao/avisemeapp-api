@@ -9,7 +9,7 @@ const bcrypt = require('./bcrypt'),
 const login = async (user) => {
     user.email = user.email.toUpperCase();
     const userFound = await User.findByEmail(user.email);
-
+    console.log(userFound);
     if(!userFound) throw new error.ServiceError('user-not-found');
 
     await bcrypt.compare(userFound.password, user.password);

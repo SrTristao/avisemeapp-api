@@ -2,7 +2,7 @@ const User = require('../models/user'),
     bcrypt = require('../services/bcrypt');
 
 const findByEmail = async (email) => {
-    return await User.findOne({email: { $regex: email}});
+    return await User.findOne({email: { $regex: email, $options: 'i' }});
 }
 
 const findById = async (id) => {
