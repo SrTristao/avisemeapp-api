@@ -7,6 +7,7 @@ const bcrypt = require('./bcrypt'),
     nodemailer = require('nodemailer');
 
 const login = async (user) => {
+    user.email = user.email.toUpperCase();
     const userFound = await User.findByEmail(user.email);
 
     if(!userFound) throw new error.ServiceError('user-not-found');

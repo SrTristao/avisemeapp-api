@@ -7,7 +7,7 @@ const bcrypt = require('./bcrypt'),
 
 const register = async (user) => {
     await validator(user);
-
+    user.email = user.email.toUpperCase();
     const alreadyExists = await User.findByEmail(user.email);
 
     if(alreadyExists) throw new error.ServiceError('user-already-created');
