@@ -18,6 +18,8 @@ const errorHandler = (err, res, next) => {
         return res.status(400).send({message: 'Veiculo já registrado.'});
         case 'vehicle-not-found':
         return res.status(400).send({message: 'Veiculo não encontrado.'});
+        case 'object-invalid-vehicle':
+        return res.status(400).send({message: 'Preencha todos os parametros.'})
         case 'score-already-created':
         return res.status(400).send({message: 'Pontuação já registrada.'});
         case 'notification-not-found':
